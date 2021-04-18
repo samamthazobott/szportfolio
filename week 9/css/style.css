@@ -1,0 +1,34 @@
+#Layer_1{
+	position: absolute;
+	width: 300px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%)
+}
+
+
+.cls-1{
+	fill:rgba(0,0,0,.0);
+	stroke:#000;
+	stroke-dasharray: 470;
+	stroke-dashoffset: 470;
+	stroke-width:2px;
+	-webkit-animation: draw 4s linear 1 forwards;
+}
+
+@-webkit-keyframes draw{
+	0%{
+		stroke-dashoffset: 470;
+		fill:rgba(0,0,0,.0);
+	}
+
+	75%{
+		stroke-dashoffset: 0;
+		fill:rgba(0,0,0,.0);
+	}
+
+	100%{
+		stroke-dashoffset: 0;
+		fill:rgba(0,0,0,1);
+	}
+}

@@ -1,0 +1,100 @@
+html, body{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: #ffff80;
+	overflow: hidden;
+}
+
+#bg{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: url('../img/background.png');
+	background-size: 50% 100%;
+	-webkit-animation: bgMove 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes bgMove{
+	from{background-position: 0%;}
+	to{background-position: -100%;}
+}
+
+.kart{
+	position: absolute;
+}
+
+.dk{
+	bottom: 40px;
+	height: 96px;
+	width: calc(974px / 9);
+	background: url('../img/dk.png');
+	-webkit-animation: drive 3s, bounce .25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: 10;
+}
+
+.mario{
+	bottom: 80px;
+	height: 93px;
+	width: calc(974px / 9);
+	background: url('../img/mario.png');
+	-webkit-animation: drive 2.3s, bounce .25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: 9;
+}
+
+.peach{
+	bottom: 110px;
+	height: 96px;
+	width: calc(974px / 9);
+	background: url('../img/peach.png');
+	-webkit-animation: drive 2.5s, bounce .40s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: 9;
+}
+
+.toad{
+	bottom: 150px;
+	height: 93px;
+	width: calc(974px / 9);
+	background: url('../img/toad.png');
+	-webkit-animation: drive 2.3s, bounce .45s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: 9;
+}
+
+.bowser{
+	bottom: 210px;
+	height: 96px;
+	width: calc(974px / 9);
+	background: url('../img/bowser.png');
+	-webkit-animation: drive 3.3s, bounce .2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: 9;
+}
+
+@-webkit-keyframes drive{
+	from{left: -10%;}
+	to{left: 110%;}
+}
+
+@-webkit-keyframes bounce{
+	from{margin-bottom: 0;}
+	to{margin-bottom: 3px;}
+}
+
+
+
+
+
+
+
+

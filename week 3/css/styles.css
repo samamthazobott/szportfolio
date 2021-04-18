@@ -1,0 +1,337 @@
+html, body{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden; 
+
+}
+
+nav{
+	position: absolute;
+	right: 0;
+	top: 50px;
+
+	z-index: 9999;
+}
+
+.link{
+	position: relative;
+	width: 200px;
+	text-align: center;
+	border-top: solid 1px white;
+	border-bottom: solid 1px white;
+	color: white;
+	cursor: pointer;
+}
+
+.link .bg{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: darkgreen;
+	z-index: 1;
+	transition: all .5s;
+}
+
+.link:hover .bg{
+	left: 0%;
+}
+
+
+.link p{
+	position: relative;
+	z-index: 10;
+}
+
+#hero{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url(../images/background.jpg);
+	background-position: center center;
+	background-size: cover;
+	z-index: 3;
+}
+
+#clouds{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width:100%;
+	background: url(../images/clouds.png) repeat-x;
+	background-size: 100vw;
+	background-position: 0vw;
+	z-index: 5;
+	-webkit-animation: clouds 45s infinite;
+	animation-fill-mode: linear;
+	
+}
+
+@-webkit-keyframes clouds{
+	0%{background-position: 110vw;}
+	100%{background-position: -110vw;}
+
+}
+
+#loaderContainer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: 10;
+	-webkit-animation: loader 3s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+
+}
+
+
+@-webkit-keyframes loader{
+	0%{opacity: : 1; z-index: 10;}
+	99%{opacity: 0; z-index: 10}
+	100%{opacity: 0; z-index: -1}
+
+}
+
+
+.loader{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	width: 58px;
+	height: 80px;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+
+}
+
+.loader img{
+	position: absolute;
+	top: 0%;
+	-webkit-animation: MonkeyUp 3s;
+	animation-fill-mode: forwards;
+	
+}
+
+@-webkit-keyframes MonkeyUp{
+	0%{top: 100%;}
+	12.5%{top: 0%;}
+	87.5%{top: 0%;}
+	100%{top: 100%;}
+}
+
+.progressGray{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-top: 50px;
+	width: 100px;
+	height: 2px;
+	background-color: darkgray;
+	transform: translateX(-50%);
+	-webkit-animation: progGreen 2s;
+	animation-fill-mode: forwards;
+	
+}
+
+.progressGreen{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-top: 50px;
+	width: 100px;
+	height: 2px;
+	background-color: darkgreen;
+	transform: translateX(-50%);
+	-webkit-animation: progGreen 3s;
+	animation-fill-mode: forwards;	
+}
+
+@-webkit-keyframes progGreen{
+	0%{width: 100px;}
+	12.5%{width: 15px;}
+	30%{width: 15px;}
+	75%{width: 100px;}
+	100%{width: 0px;}
+}
+
+.stripe{
+	position: absolute;
+	height: 100%;
+	width: 30%;
+	left: -100%;
+	background-color:darkgreen;
+	transform:skewX(-20deg);
+	-webkit-animation: stripe .7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 3s;
+}
+
+
+@-webkit-keyframes stripe{
+	0%{left: -100%;}
+	100%{left: 140%;}
+}
+
+
+.icons{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 68px;
+	height: 68px;
+	/*border: solid 1px white;*/
+	z-index: 20;
+	display: none;
+}
+
+.icons img{
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	opacity:0;
+
+	-webkit-animation: IconImg 3.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: .3s;
+}
+
+.left-side{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background-color: white;
+	-webkit-animation: leftSide 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+}
+
+
+@-webkit-keyframes leftSide{
+	0%{height: 0%;}
+	100%{height: 100%;}
+}
+
+.bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: white;
+	-webkit-animation: bottom 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+}
+
+
+@-webkit-keyframes bottom{
+	0%{width: 0%;}
+	100%{width: 100%;}
+}
+
+.right-side{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 2px;
+	height: 0%;
+	background-color: white;
+	-webkit-animation: rightSide 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+}
+
+
+@-webkit-keyframes rightSide{
+	0%{height: 0%;}
+	100%{height: 100%;}
+}
+
+.top {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 0%;
+	height: 2px;
+	background-color: white;
+	-webkit-animation: top 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 3s;
+}
+
+
+@-webkit-keyframes top {
+	0%{width: 0%;}
+	100%{width: 100%;}
+}
+
+.lt-corner, .bottom-corner, .rt-corner, .top-corner{
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	top: -2px;
+	left: -2px;
+	background-color: white;
+
+}
+
+.bottom-corner{
+	top: auto;
+	bottom: -2px;
+	opacity: 0;
+	-webkit-animation: corners .2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: .9s;
+}
+
+.rt-corner{
+	top: auto;
+	left: auto;
+	right: -2px;
+	bottom: -2px;
+	opacity: 0;
+	-webkit-animation: corners .2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 1.9s;
+}
+
+.top-corner{
+	top: -2px;
+	left: auto;
+	right: -2px;
+	bottom: auto;
+	opacity: 0;
+	-webkit-animation: corners .2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 2.9s;
+}
+
+
+@-webkit-keyframes corners {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-webkit-keyframes IconImg{
+	0%{top: 100%; opacity: 0}
+	12.5%{top: 0%; opacity: 1}
+	87.5%{top: 0%; opacity: 1}
+	100%{top: -100%; opacity: 0}
+}

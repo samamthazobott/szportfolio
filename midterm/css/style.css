@@ -1,0 +1,178 @@
+
+
+html, body{
+	margin: 0;
+	position: relative;
+	padding: 0;
+	font-size: 16px;
+}
+
+.main{
+	background-image: url('../Archive/dubai.jpg');
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.nav-links{
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+
+.title{
+	font-size: 3em;
+	letter-spacing: 3px;
+	font-weight: 500;
+}
+
+.portrait{
+	border-radius: 50%;
+}
+
+.subhead{
+	font-size: 2em;
+}
+
+.tower{
+	margin-top: -180px;
+}
+
+
+.china{
+	background-image: url('../Archive/Shanghai-5318.jpg');
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.white-box{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	top: 0;
+	left: 0;
+	margin: 0px;
+	padding-top: 5px;
+}
+
+
+.section-title{
+	position: absolute;
+	width: 100%;
+	top: 25vh;
+	transform: translateY(-50%);
+}
+
+.box{
+	margin-top: -70px;
+}
+
+.home-title{
+	padding-top: 30px;
+}
+
+.numbers h2{
+	margin-top: -40px;
+}
+
+.london{
+	background-image: url('../Archive/London.jpg');
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.kuala{
+	background-image: url('../Archive/kuala_lumpur.jpg');
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.show button{
+	background-color: white;
+	padding: 15px 30px;
+	border: none;
+  	box-shadow: 2px 2px 4px #000000;
+  	text-transform: uppercase;
+  	margin-bottom: 70px;
+  	margin-top: 20px;
+}
+
+.guide{
+	background-image: url('../Archive/zion-FIFTY0516.jpg');
+	height: 40vh;
+	background-size: cover;
+	background-position: center bottom;
+	margin-bottom: 80px;
+}
+
+.para1{
+	position: absolute;
+	width: 100%;
+	top: 10vh;
+	transform: translateY(-50%);
+}
+
+.para2{
+	position: absolute;
+	width: 100%;
+	top: 18vh;
+	transform: translateY(-50%);
+}
+
+
+.read{
+	position: relative;
+	background-color: brown;
+	color: white;
+	padding: 15px 30px;
+	border: none;
+  	box-shadow: 2px 2px 4px #000000;
+  	text-transform: uppercase;
+  	margin-bottom: 70px;
+  	margin-top: 20px;
+
+  	position: absolute;
+	top: 27vh;
+	transform: translateY(-50%);
+	margin-left: 140px;
+}
+
+.grey-box{
+	height: 265px;
+	background-color: grey;
+	padding: 0px!important;
+	margin-top: -265px;
+	z-index: -5;
+}
+
+.links h4{
+	color: black;
+}
+
+
+.social{
+	background-color: darkgray;
+}
+
+input[type="email" i] {
+	background-color: transparent;
+}
+
+
+.logo{
+	padding-top: 0px!important;
+	padding-left: 100px!important;
+}
+
+
+
+
+
+
+
+

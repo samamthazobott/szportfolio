@@ -1,0 +1,143 @@
+
+
+html, body{
+	margin: 0;
+	position: relative;
+	padding: 0;
+	font-size: 16px;
+	background-color: #e9ebeb;
+}
+
+.main{
+	background-image: url('../img/heroimg.png');
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.nav-links{
+	position: relative;
+	float: right;
+	margin-right: 20px;
+	text-transform: lowercase;
+	font-family: futura-pt, sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.logo{
+	font-family: futura;
+	font-size: 40pt;
+	font-weight: 500;
+	text-transform: lowercase;
+	padding-left: 5% !important;
+}
+
+
+.intro{
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: lowercase;
+	font-size: 20pt;
+	margin-bottom: 0!important;
+}
+
+
+.title{
+	font-size: 70px;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	text-transform: lowercase;
+}
+
+.words{
+	font-family: futura;
+	font-size: 30pt;
+	font-weight: 500;
+	text-transform: lowercase;
+	padding-left: 4%!important;
+}
+
+.wordstwo{
+	/*padding-left: 9%!important;*/
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.sz img{
+	position: relative;
+	width: 50%;
+	transform: translate(0%, 50%);
+}
+
+.me img{
+	transform: translate(0%, 10%);
+	z-index: 10;
+}
+
+.about{
+	border: 2.5px solid black!important;
+	transform:translate(-10%);
+}
+
+.inside{
+	position: relative;
+	transform:translate(10%);
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: lowercase;
+	font-size: 12pt;
+}
+
+.contact-title{
+	text-align: center;
+}
+
+.aboutme{
+	text-align: center;
+}
+
+.spacerone{
+	height: 50px;
+}
+
+.footer{
+	margin-top: 5%;
+	height: 100px;
+	background-color: #8E9BA5;
+	width: 100%!important;
+}
+
+.icon{
+	padding-top: 20px;
+	margin-right: 20px;
+	width: 50px;
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
